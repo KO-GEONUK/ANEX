@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>form 서버에 요청을 보내기</title>
+    </head>
+    <body>
+        <h1>제일 좋아하는 음식</h1>
+        <form action="exam.php" method="POST">
+            <input type="text" placeholder="NAME" name="name">
+            <br>
+            <select name="food">
+                <option value="ramen">라멘</option>
+                <option value="chikin">치킨</option>
+                <option value="pizza">피자</option>
+                <option value="Hamburger">햄버거</option>
+            </select>
+            <br>
+            <input type="submit" value="전송">
+        </form>
+    </body>
+</html>
