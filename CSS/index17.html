@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>의사요소</title>
+    <style>
+        #first::first-line{
+            color: red;
+        }
+        #first::first-letter{
+            color: blue;
+        }
+        /* ===================================================== */
+        li::marker{
+            color: aqua;
+            font-size: 50px;
+        }
+        /* ===================================================== */
+        input::placeholder{
+            font-size: 24px;
+            color: black;
+        }
+        /* ===================================================== */
+        #text::before{
+            content: "앞에 추가한 텍스트";
+            color: tomato; font-weight: 900;
+        }
+        #text::after{
+            content: "뒤에 추가한 텍스트";
+            color: greenyellow; font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <p id="first">
+        퍼스트 라인 & 퍼스트 레터
+        퍼스트 라인 & 퍼스트 레터
+        퍼스트 라인 & 퍼스트 레터
+        퍼스트 라인 & 퍼스트 레터
+        퍼스트 라인 & 퍼스트 레터
+    </p>
+    <hr>
+    <ul>
+            <li>라면</li>
+            <li>햄버거</li>
+            <li>치킨</li>
+            <li>피자</li>
+    </ul>
+    <hr>
+    <input type="txet" placeholder="입력해주세용!">
+    <hr>
+    <p id="text">~원래 쓰여 있던 텍스트~</p>
+</body>
+</html>

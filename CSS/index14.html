@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox</title>
+    <style>
+        .container{ 
+            display: flex;
+            width: 300px; height: 300px;
+            border: 2px solid black;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-wrap: wrap; 개별 요소들의 도합 크키가 컨테이너 주축길이보다 커졌을때의 처리 방법 및 방향 정의*/
+        }
+        .item{
+            width: 75px; height: 75px;
+            background-color: aquamarine;
+        }
+        .self{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item self">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
